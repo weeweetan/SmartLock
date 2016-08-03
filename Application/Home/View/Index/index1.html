@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CO-Locker欢迎您</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/video-default.css">
+<style>
+.navbar-brand {
+	float: left;
+	height: 80px;
+	font-size: 18px;
+	line-height: 20px;
+	padding: 0px;
+}
+
+.img-brand {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.navbar-inverse {
+	color: #fff;
+	background-color: #09395B;
+	border-color: #080808;
+}
+
+.navbar-nav {
+	color: #fff;
+}
+
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px;
+	margin: 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+	font-family: 微软雅黑;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover
+	{
+	color: #ffb109;
+}
+
+#video .row {
+	background: #FFB109;
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	height: 550px;
+}
+
+.video {
+	margin: 10px;
+}
+
+.video-right {
+	margin: 30px auto;
+	font-size: 42px;
+	width: 550px;
+	height: 300px;
+	color: #1E3D52;
+}
+
+#video .col-md-6 {
+	width: 50%;
+	height: 550px;
+	position: relative;
+	top: 100px;
+}
+
+.login {
+	margin: 20px;
+	position: relative;
+	float: right;
+	color: #fff;
+	font-family: 微软雅黑;
+}
+
+.login>a {
+	color: #fff;
+}
+
+.login>a:hover {
+	text-decoration: none;
+}
+
+#product .row {
+	position: absolute;
+	top: 631px;
+	width: 100%;
+}
+
+.product-header {
+	background: #09395B;
+	height: 70px;
+	font-size: 48px;
+	color: #FFB109;
+	font-family: 微软雅黑;
+	float: left;
+	width: 100%
+}
+
+.text-center-head {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 60px;
+	font-family: 微软雅黑;
+	color: #09395B;
+	text-align: center;
+}
+
+.text-center-title {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 36px;
+	font-family: 微软雅黑;
+	font-weight: lighter;
+	color: #09395B;
+}
+
+.text-center-content {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 24px;
+	font-family: 黑体;
+	color: #09395B;
+}
+
+#product .row .col-md-4 {
+	background: #F6BF0D;
+}
+
+.btn-default {
+	width: 200px;
+	color: #fff;
+	background-color: #F6BF0D;
+	border-color: #fff;
+	position: relative;
+	margin: 60px 0px 10px 25%;
+}
+
+#team .row {
+	position: absolute;
+	top: 1210px;
+	width: 100%;
+}
+
+.team-header, .download-header, .contact-header {
+	background: #09395B;
+	height: 70px;
+	font-size: 48px;
+	color: #FFB109;
+	font-family: 微软雅黑;
+	width: 100%;
+}
+
+.img-box {
+	background: url("__PUBLIC__/images/team-bg.jpg") center center;
+	position: absolute;
+	width: 100%;
+	height: 505px;
+	/* 	background: #F6BF0D; */
+}
+
+.img-box img {
+	border-radius: 200px;
+}
+
+.img-c {
+	background: url("__PUBLIC__/images/team.jpg") center center;
+	background-size: 150%;
+	position: absolute;
+	left: 45%;
+	top: 32%;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.img-1 {
+	background: url("__PUBLIC__/images/tw.jpg") center center;
+	background-size: 100%;
+	position: absolute;
+	left: 47%;
+	top: 30%;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.img-2 {
+	background: url("__PUBLIC__/images/wjt.jpg") center center;
+	background-size: 100%;
+	position: absolute;
+	left: 47%;
+	top: 30%;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.img-3 {
+	background: url("__PUBLIC__/images/lj.jpg") center center;
+	background-size: 100%;
+	position: absolute;
+	left: 47%;
+	top: 30%;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.img-4 {
+	background: url("__PUBLIC__/images/ck.jpg") center center;
+	background-size: 100%;
+	position: absolute;
+	left: 47%;
+	top: 30%;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.img-5 {
+	background: url("__PUBLIC__/images/wjg.jpg") center center;
+	background-size: 100%;
+	position: absolute;
+	left: 47%;
+	top: 30%;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.img-6 {
+	background: url("__PUBLIC__/images/wxy.jpg") center center;
+	background-size: 100%;
+	position: absolute;
+	left: 47%;
+	top: 30%;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.img-7 {
+	background: url("__PUBLIC__/images/lhm.jpg") center center;
+	background-size: 100%;
+	position: absolute;
+	left: 47%;
+	top: 30%;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.img-8 {
+	background: url("__PUBLIC__/images/zjt.jpg") center center;
+	background-size: 100%;
+	position: absolute;
+	left: 47%;
+	top: 30%;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.img-c:hover .cover, .img-1:hover .cover, .img-2:hover .cover, .img-3:hover .cover,
+	.img-4:hover .cover, .img-5:hover .cover, .img-6:hover .cover, .img-7:hover .cover,
+	.img-8:hover .cover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.img-c:hover .cover span, .img-1:hover .cover span, .img-2:hover .cover span,
+	.img-3:hover .cover span, .img-4:hover .cover span, .img-5:hover .cover span,
+	.img-6:hover .cover span, .img-7:hover .cover span, .img-8:hover .cover span
+	{
+	display: block;
+}
+
+.img-c span, .img-1 span, .img-2 span, .img-3 span, .img-4 span, .img-5 span,
+	.img-6 span, .img-7 span, .img-8 span {
+	display: none;
+}
+
+.cover {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: rgba(255, 177, 9, .5);
+	overflow: hidden;
+	text-align: center;
+	opacity: 0;
+}
+
+.img-c .cover span {
+	margin-top: 20px;
+	margin-bottom: 0;
+	line-height: 24px;
+}
+
+.cover span {
+	font-family: 微软雅黑;
+	margin-top: 10px;
+	margin-bottom: 0;
+	line-height: 24px;
+	/*  	color:#09395b;  */
+	color: #fff;
+}
+
+.team-footer {
+	position: absolute;
+	top: 450px;
+	color: #FFB109;
+	font-family: 微软雅黑;
+	font-size: 60px;
+	width: 100%;
+}
+
+#download .row {
+	position: absolute;
+	top: 1785px;
+	width: 100%;
+}
+
+#download .col-md-12 {
+	height: 605px;
+	background-size: 100%;
+	background: url("__PUBLIC__/images/download-bg.jpg");
+	/* 	background:red; */
+}
+
+#download .col-md-12 .img-responsive {
+	margin: 5% auto;
+	color: #FF9D14;
+}
+
+.contact-content {
+	margin: 3% auto;
+}
+
+.scan {
+	border: 2px solid #fff;
+	margin: 8% auto 0 auto;
+	background: #09395B;
+	width: 30%;
+	font-size: 40px;
+	font-family: 微软雅黑;
+	color: #FFB109;
+}
+
+.scan-text {
+	text-align: center;
+}
+
+#contact .row {
+	position: absolute;
+	top: 2455px;
+	width: 100%;
+}
+
+.glyphicon-envelope {
+	top: 70px;
+	left: 30%;
+	font-size: 36px;
+	color: #FFB109;
+}
+
+.glyphicon-home {
+	top: 80px;
+	left: 30%;
+	font-size: 36px;
+	color: #FFB109;
+}
+
+.contact-url {
+	margin: 10px auto;
+	font-size: 36px;
+	font-family: 微软雅黑;
+	background: #FFB109;
+	color: #09395b;
+	width: 32%;
+	border: 2px solid #09395b;
+}
+
+.contact-address {
+	margin: 20px auto;
+	font-size: 36px;
+	font-family: 微软雅黑;
+	background: #FFB109;
+	color: #09395b;
+	width: 32%;
+	border: 2px solid #09395b;
+}
+
+.contact-footer {
+	position: absolute;
+	top: 450px;
+	width: 100%;
+	background: #09395b;
+	color: #fff;
+	font-size: 24px;
+	height: 200px;
+	font-family: 微软雅黑;
+}
+
+.foot-content {
+	position: absolute;
+	margin: 5% auto 0 auto;
+	width: 100%;
+}
+
+@media ( max-width :1350px) {
+	body {
+		position: absolute;
+		width: 1350px;
+		overflow-x: scroll;
+	}
+	#product .row {
+		position: absolute;
+		width: 1350px;
+	}
+	.video-right-wrap {
+		position: absolute;
+		margin: -500px auto -100px auto;
+		font-size: 42px;
+		width: 550px;
+		height: 300px;
+		color: #1E3D52;
+		left: 300px;
+	}
+	.product-left {
+		position: absolute;
+		width: 450px;
+	}
+	.product-middle {
+		position: absolute;
+		width: 450px;
+		left: 450px;
+	}
+	.product-right {
+		position: absolute;
+		width: 450px;
+		left: 900px;
+	}
+	.download-bg {
+		margin-top: 0px;
+	}
+	.download-img {
+		position: absolute;
+		/* margin: 50px auto 50px auto; */
+		color: #FF9D14;
+		top: 10px;
+		left: 520px;
+	}
+	.scan {
+		position: absolute;
+		top: 360px;
+		left: 480px;
+	}
+}
+
+@media ( min-width :990px) and (max-width:1345px) {
+	.video-right-wrap {
+		/* margin: 0px 0px -100px 0px; */
+		margin-top:-10px;
+		left:0px;
+		font-size: 42px;
+		width: 550px;
+		height: 300px;
+		color: #1E3D52;
+	}
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-defalut navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="__URL__/index"><img class="img-brand" alt="CO-Locker" src="__PUBLIC__/images/logo.jpg"></a>
+			</div>
+			<div class="navbar-collapse collapse pull-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="javascript:void(0)" id="nav-video">产品视频</a></li>
+					<li><a href="javascript:void(0)" id="nav-product">产品介绍</a></li>
+					<li><a href="javascript:void(0)" id="nav-team">团队介绍</a></li>
+					<li><a href="javascript:void(0)" id="nav-download">下载APP</a></li>
+					<li><a href="javascript:void(0)" id="nav-contact">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div id="video">
+			<div class="row">
+				<div class="login">
+					<a href="">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">注册</a>
+				</div>
+				<div class="col-md-6">
+					<video width="618" poster="__PUBLIC__/images/cover.jpg" class="video" height="347" controls preload>
+						<source src="__PUBLIC__/video/co-locker.mp4"
+							media="only screen and (min-device-width: 568px)"></source>
+					</video>
+				</div>
+				<div class="col-md-6 video-right-wrap">
+					<div class="video-right">
+						<p class="text-center">上帝创造了我们而我们</p>
+						<p class="text-center">创造了</p>
+						<p class="text-center" style="font-weight:bold">CO-Locker</p>
+					</div>
+				</div>
+			</div>
+		</div>
+     		<div id="product">
+			<div class="row">
+				<div class="product-header">
+					<p class="text-center">CO-Locker</p>
+				</div>
+				<div>
+					<img class="img-responsive" src="__PUBLIC__/images/product-bg.jpg"/>
+				</div>
+				<div class="col-md-4 product-left">
+					<p class="text-center-head">无锁孔</p>
+					<p class="text-center-title">手机APP一键解锁</p>
+					<p class="text-center-content">没有锁孔的方式 增加了锁的安全 性能，一键解锁 省时省力</p>
+					<button type="button" class="btn btn-default btn-lg">更&nbsp;&nbsp;&nbsp;多</button>
+				</div>
+				<div class="col-md-4 product-middle">
+					<p class="text-center-head">双报警</p>
+					<p class="text-center-title">远程近距离双报警</p>
+					<p class="text-center-content">智能呼救、不管你身在何方，远近距离双报警的方式会保障车的安全</p>
+					<button type="button" class="btn btn-default btn-lg">更&nbsp;&nbsp;&nbsp;多</button>
+				</div>
+				<div class="col-md-4 product-right">
+					<p class="text-center-head">双定位</p>
+					<p class="text-center-title">GPS和北斗双定位</p>
+					<p class="text-center-content">双定位系统实时 监控自行车的位置 不在爱车身边也能 知其状态</p>
+					<button type="button" class="btn btn-default btn-lg">更&nbsp;&nbsp;&nbsp;多</button>
+				</div>
+			</div>
+		</div>
+    		<div id="team">
+			<div class="row">
+				<div class="team-header">
+					<p class="text-center">关于CO</p>
+				</div>
+				<div class="img-box">
+					<div class="img-c">
+						<div class="cover">
+							<span>CO</span>
+							<span>Creative&nbsp;&nbsp;Oriental</span>
+						</div>
+					</div>
+					<div class="img-1 son">
+						<div class="cover">
+							<span>谭伟</span>
+							<span>PHP工程师</span>							
+						</div>
+					</div>
+					<div class="img-2 son">
+						<div class="cover">
+							<span>吴江涛</span>
+							<span>前端工程师</span>
+						</div>
+					</div>
+					<div class="img-3 son">
+						<div class="cover">
+							<span>柳进</span>
+							<span>项目经理</span>						
+						</div>
+					</div>
+					<div class="img-4 son">
+						<div class="cover">
+							<span>陈凯</span>
+							<span>嵌入式工程师</span>						
+						</div>
+					</div>
+					<div class="img-5 son">
+						<div class="cover">
+							<span>吴建国</span>
+							<span>数据分析师</span>					
+						</div>
+					</div>
+					<div class="img-6 son">
+						<div class="cover">
+							<span>王昕月</span>
+							<span>前端工程师</span>					
+						</div>
+					</div>
+					<div class="img-7 son">
+						<div class="cover">
+							<span>李红梅</span>
+							<span>UI设计师</span>						
+						</div>
+					</div>
+					<div class="img-8 son">
+						<div class="cover">
+							<span>赵江涛</span>
+							<span>机械工程师</span>						
+						</div>
+					</div>
+					<!-- <img class="img-c" src="__PUBLIC__/images/team.jpg" /> -->
+					<!-- <img class="img-1 son" src="__PUBLIC__/images/tw.jpg" /> -->
+					<!-- <img class="img-2 son" src="__PUBLIC__/images/wjt.jpg" /> -->
+					<!-- <img class="img-3 son" src="__PUBLIC__/images/lj.jpg" /> -->
+					<!-- <img class="img-4 son" src="__PUBLIC__/images/ck.jpg" /> -->
+					<!-- <img class="img-5 son" src="__PUBLIC__/images/wjg.jpg" /> -->
+					<!-- <img class="img-6 son" src="__PUBLIC__/images/all.jpg" /> -->
+					<!-- <img class="img-7 son" src="__PUBLIC__/images/lhm.jpg" /> -->
+					<!-- <img class="img-8 son" src="__PUBLIC__/images/wjt.jpg" /> -->
+         		</div>
+			</div>
+		</div>
+		<div id="download">
+			<div class="row">
+				<div class="download-header">
+					<p class="text-center">APP下载</p>
+				</div>
+				<div class="col-md-12 download-bg">
+					<img class="img-responsive download-img" src="__PUBLIC__/images/cli_300px.png">
+					<div class="scan">
+						<p class="scan-text">扫描二维码获取APP</p>
+					</div>
+				</div>
+			</div>
+		</div>
+  		<div id="contact">
+			<div class="row">
+				<div class="contact-header">
+					<p class="text-center">联系我们</p>
+				</div>
+				<div class="col-md-12">
+					<div class="contact-content">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<div class="contact-address">
+							<p class="text-center">成都市外东十陵成都大学</p>
+						</div>
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						<div class="contact-url">
+							<p class="text-center">co_locker@163.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="contact-footer">
+					<div class="foot-content">
+						<p class="text-center">所有解释权归CO所有</p>
+						<p class="text-center">copyright&copy;2016 CO_Locker</p>
+						<img class="img-responsive" src="__PUBLIC__/images/line.png"/>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>	
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/html5media.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$(".img-c").click(function() {
+		var m = $(".img-1").css("opacity");
+		if (m==1) {
+			$(".son").animate({
+				top: '44%',
+				left: '49%',
+				width: '0px',
+				height: '0px',
+				opacity: '0',
+			})
+		} else {
+			$(".img-1").animate({
+				left: '29%',
+				top: '19%',
+				width: '100px',
+				height: '100px',
+				opacity: '1',
+			}, 300);
+			$(".img-2").animate({
+				left: '40%',
+				top: '5%',
+				width: '100px',
+				height: '100px',
+				opacity: '1',
+			}, 400);
+			$(".img-3").animate({
+				left: '53%',
+				top: '5%',
+				width: '100px',
+				height: '100px',
+				opacity: '1',
+			}, 500);
+			$(".img-4").animate({
+				left: '63%',
+				top: '19%',
+				width: '100px',
+				height: '100px',
+				opacity: '1',
+			}, 600);
+			$(".img-5").animate({
+				left: '29%',
+				top: '45%',
+				width: '100px',
+				height: '100px',
+				opacity: '1',
+			}, 700);
+			$(".img-6").animate({
+				left: '40%',
+				top: '65%',
+				width: '100px',
+				height: '100px',
+				opacity: '1',
+			}, 800);
+			$(".img-7").animate({
+				left: '53%',
+				top: '65%',
+				width: '100px',
+				height: '100px',
+				opacity: '1',
+			}, 900);
+			$(".img-8").animate({
+				left: '63%',
+				top: '45%',
+				width: '100px',
+				height: '100px',
+				opacity: '1',
+			}, 1000);
+		}
+	});
+});
+$("#nav-video").click(function(){
+	$('html,body').animate({scrollTop:$("#product").offset().top},1000);
+});
+$("#nav-product").click(function(){
+	$('html,body').animate({scrollTop:$("#product .row").offset().top},1000);
+});
+$("#nav-team").click(function(){
+	$('html,body').animate({scrollTop:$("#team .row").offset().top},1000);
+});
+$("#nav-download").click(function(){
+	$('html,body').animate({scrollTop:$("#download .row").offset().top},1000);
+});
+$("#nav-contact").click(function(){
+	$('html,body').animate({scrollTop:$("#contact .row").offset().top},1000);
+});
+</script>
+</body>
+</html>

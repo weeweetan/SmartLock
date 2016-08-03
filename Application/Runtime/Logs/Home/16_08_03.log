@@ -1,0 +1,22 @@
+[ 2016-08-03T08:59:48+08:00 ] ::1 /Smartlock/Android/report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.081084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031546s ]
+SQL: SHOW COLUMNS FROM `lock_position` [ RunTime:1.6850s ]
+SQL: SELECT `id`,`lng`,`lat`,`reason` FROM `lock_position` WHERE `device_serialNumber` = 0 ORDER BY id desc LIMIT 0,1   [ RunTime:0.2048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.180496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.180652s ]
+
+[ 2016-08-03T14:42:15+08:00 ] ::1 /Smartlock/Android/test?reason=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024925s ]
+ERR: 非法操作:test
+

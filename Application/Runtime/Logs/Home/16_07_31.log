@@ -1,0 +1,78 @@
+[ 2016-07-31T13:35:19+08:00 ] ::1 /Smartlock/Android/test?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.091942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.036087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036207s ]
+SQL: SHOW COLUMNS FROM `lock_user` [ RunTime:0.8399s ]
+SQL: SELECT * FROM `lock_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:2.0484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.267769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.267980s ]
+
+[ 2016-07-31T15:57:25+08:00 ] ::1 /Smartlock/Android/lendBike?user_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021002s ]
+SQL: SHOW COLUMNS FROM `lock_user` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `lock_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015152s ]
+
+[ 2016-07-31T15:58:51+08:00 ] ::1 /Smartlock/Android/lendBike?user_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `lock_user` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `lock_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002218s ]
+
+[ 2016-07-31T15:59:28+08:00 ] ::1 /Smartlock/Android/lendBike?user_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `lock_user` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `lock_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002861s ]
+
+[ 2016-07-31T16:00:32+08:00 ] ::1 /Smartlock/Android/lendBike?user_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `lock_user` [ RunTime:0.1327s ]
+SQL: SELECT * FROM `lock_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002194s ]
+
+[ 2016-07-31T16:34:21+08:00 ] ::1 /Smartlock/Android/lendBike?user_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012124s ]
+SQL: SHOW COLUMNS FROM `lock_user` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `lock_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.104140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.104230s ]
+

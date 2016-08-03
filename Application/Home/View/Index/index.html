@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="__PUBLIC__/images/logo-small.png" type="image/x-icon"/>
+<title>CO-Locker欢迎您</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/video-default.css">
+<style>
+.nav {
+	
+}
+
+.navbar-brand {
+	float: left;
+	font-size: 18px;
+	line-height: 20px;
+	padding: 0px;
+}
+
+.img-brand {
+	margin-top: 10px;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.navbar-inverse {
+	color: #fff;
+	background: transparent;
+	border: 0px;
+}
+
+.navbar-nav {
+	color: #fff;
+}
+
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px;
+	margin: 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #000;
+	font-family: 微软雅黑;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover
+	{
+	color: #00d295;
+}
+
+.login {
+	width: 85px;
+	margin-top: 80px;
+	left: 1200px;
+	position: absolute;
+	font-family: 微软雅黑;
+}
+
+.regist {
+	width: 85px;
+	margin-top: 120px;
+	left: 1200px;
+	position: absolute;
+	font-family: 微软雅黑;
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+	padding: 0 20px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px/25px Arial, sans-serif;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, .22);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px
+		rgba(255, 255, 255, .44);
+	-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px
+		rgba(255, 255, 255, .44);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px
+		rgba(255, 255, 255, .44);
+	-webkit-transition: all 0.15s ease;
+	-moz-transition: all 0.15s ease;
+	-o-transition: all 0.15s ease;
+	-ms-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+
+.green {
+	color: #fff;
+	background: #00d295;
+}
+
+.login a:hover, .regist a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.index-bg:before {
+	content: "";
+	position: absolute;
+	width: 200px;
+	height: 100%;
+	top: 0;
+	left: -150px;
+	overflow: hidden;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, 0) 100%);
+	-webkit-transform: skewX(-25deg);
+	-moz-transform: skewX(-25deg);
+}
+.index-bg:hover:before { 
+	left: 150%; 
+	transition: left 1s ease 0s; 
+}
+.green-bottom {
+	position: absolute;
+	left: 1150px;
+	top: 445px;
+}
+
+.header-text {
+	width: 100px;
+	position: absolute;
+	font-size: 24px;
+	font-family: 微软雅黑;
+	left: 630px;
+	top: 680px;
+}
+
+.header-img {
+	position: absolute;
+	left: 570px;
+	top: 670px;
+}
+
+.product-header .header-content {
+	font-size: 20px;
+	font-family: 微软雅黑;
+	position: absolute;
+	top: 730px;
+	left: 370px;
+	width: 559px;
+}
+
+.location {
+	margin-top: 50px;
+	font-size: 20px;
+	font-family: 微软雅黑;
+}
+
+.tag {
+	position: absolute;
+	left: 1080px;
+	top: 800px;
+}
+
+.gps {
+	position: absolute;
+	left: 1000px;
+	top: 900px;
+	width: 219px;
+}
+
+.core {
+	position: absolute;
+	left: 860px;
+	top: 1075px
+}
+
+.product-content .tangle {
+	position: absolute;
+	left: 821px;
+	top: 1000px;
+}
+
+.lock-label {
+	position: absolute;
+	top: 1420px;
+	left: 150px;
+}
+
+.lock-content {
+	font-size: 20px;
+	font-family: 微软雅黑;
+	position: absolute;
+	left: 50px;
+	top: 1500px;
+	width: 282px;
+}
+
+.unlock-img {
+	position: absolute;
+	top: 1410px;
+	left: 371px;
+}
+
+.CO-Locker10 {
+	position: absolute;
+	top: 1754px;
+}
+
+.tangle-right {
+	position: absolute;
+	left: 372px;
+	top: 1600px;
+}
+
+.rent-big {
+	position: absolute;
+	top: 1970px;
+}
+
+.rent-small {
+	position: absolute;
+	left: 1145px;
+	top: 2000px;
+}
+
+.app-content {
+	font-size: 20px;
+	font-family: 微软雅黑;
+	position: absolute;
+	top: 2100px;
+	left: 1000px;
+	width: 340px;
+}
+
+.rent-mid {
+	position: absolute;
+	left: 1050px;
+	top: 2320px;
+}
+
+.rent-tangle {
+	position: absolute;
+	left: 949px;
+	top: 2200px;
+}
+
+.ride6 {
+	position: absolute;
+	top: 2530px;
+}
+
+.ride3 {
+	position: absolute;
+	top: 2530px;
+	left: 850px;
+}
+
+.tangle-ride {
+	position: absolute;
+	top: 2570px;
+	left: 471px;
+}
+
+.tangle-right-ride {
+	position: absolute;
+	top: 2700px;
+	left: 849px;
+}
+
+.ride-content {
+	font-size: 20px;
+	font-family: 微软雅黑;
+	position: absolute;
+	top: 2700px;
+	left: 550px;
+	width: 280px;
+}
+
+.bike {
+	position: absolute;
+	top: 2550px;
+	left: 610px;
+}
+
+.cart {
+	position: absolute;
+	top: 10px;
+	left: 580px;
+}
+
+.mall-header p {
+	position: absolute;
+	top: 20px;
+	left: 650px;
+	font-size: 24px;
+	font-family: 微软雅黑;
+	width: 48px;
+}
+
+.mall-content .Locker10 {
+	position: absolute;
+	top: 3000px;
+}
+
+.bike4 {
+	position: absolute;
+	top: 3000px;
+	left: 466px;
+}
+
+.bike11 {
+	position: absolute;
+	top: 3000px;
+	left: 952px;
+}
+
+.bike7 {
+	position: absolute;
+	top: 3263px;
+}
+
+.bike9 {
+	position: absolute;
+	top: 3263px;
+	left: 355px;
+}
+
+.bike8 {
+	position: absolute;
+	top: 3263px;
+	left: 675px;
+}
+
+.bike10 {
+	position: absolute;
+	top: 3263px;
+	left: 995px;
+}
+
+.bike5 {
+	position: absolute;
+	top: 3463px;
+}
+
+.bike6 {
+	position: absolute;
+	top: 3463px;
+	left: 356px;
+}
+
+.bike1 {
+	position: absolute;
+	top: 3463px;
+	left: 995px;
+}
+
+.coverall {
+	position: absolute;
+	font-family: 微软雅黑;
+	color: #00d295;
+	font-size: 25px;
+	opacity: 0;
+}
+
+.mall-table-top .coverall {
+	top: 85px;
+	left: 40%;
+}
+
+.mall-table-img .coverall {
+	top: 105px;
+	left: 35%;
+}
+
+.mall-table-img2 .coverall {
+	top: 225px;
+	left: 35%;
+}
+
+.mall-table-top:hover .coverall, .mall-table-img:hover .coverall {
+	opacity: 1.0;
+}
+
+.mall-table-top:hover img, .mall-table-img:hover img {
+	opacity: 0.5;
+	cursor: pointer;
+}
+/* .bike1:hover,.bike4:hover,.bike5:hover,.bike6:hover,.bike7:hover,.bike8:hover,.bike9:hover,.bike10:hover,.bike11:hover,.mall-content .Locker10:hover{
+	opacity: 0.5;
+	cursor: pointer;
+} */
+.enter-mall {
+	position: absolute;
+	top: 829px;
+	background: #00d295;
+	width: 1350px;
+	height: 50px;
+}
+
+.enter-mall span {
+	position: absolute;
+	font-size: 24px;
+	font-family: 微软雅黑;
+	color: #fff;
+	left: 675px;
+	margin-top: 8px;
+}
+
+.enter-mall img {
+	position: absolute;
+	left: 600px;
+	margin-top: 15px;
+}
+
+.down {
+	position: absolute;
+	top: 3712px;
+}
+
+.down-header {
+	position: absolute;
+	top: 60px;
+}
+
+.qrcode {
+	position: absolute;
+	top: 160px;
+	left: 350px;
+}
+
+.co {
+	font-size: 28px;
+	font-family: 微软雅黑;
+	color: #9d9d9d;
+	position: absolute;
+	top: 200px;
+	left: 660px;
+	width: 142px;
+}
+
+.slogan {
+	font-size: 28px;
+	font-family: 微软雅黑;
+	color: #9d9d9d;
+	position: absolute;
+	top: 250px;
+	left: 724px;
+	width: 252px;
+}
+
+.scan {
+	font-size: 14px;
+	font-family: 微软雅黑;
+	color: #9d9d9d;
+	position: absolute;
+	top: 310px;
+	left: 704px;
+	width: 106px;
+}
+
+.contact {
+	position: absolute;
+	top: 4160px;
+}
+
+.contact-header {
+	font-size: 24px;
+	font-family: 微软雅黑;
+	position: absolute;
+	top: 50px;
+	left: 600px;
+	padding: 10px;
+	width: 184px;
+	left: 600px;
+}
+
+.contact-header span {
+	margin-left: 10px;
+}
+
+.contact-content {
+	font-size: 18px;
+	color: #00d295;
+	font-family: 微软雅黑;
+	position: absolute;
+	top: 200px;
+	left: 600px;
+}
+
+.contact-content span {
+	padding: 5px;
+}
+
+.footer {
+	position: absolute;
+	top: 4560px;
+	width: 1350px;
+	height: 100px;
+	background: #dbdbdb;
+}
+
+.footer img {
+	position: absolute;
+	left: 1150px;
+	top: -98px;
+}
+
+.footer span {
+	position: absolute;
+	left: 550px;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 40px;
+}
+
+@media ( max :1350px) {
+	body {
+		position: absolute;
+		width: 1350px;
+		overflow-x: scroll;
+	}
+}
+
+.mall-table {
+	position: relative;
+	top: 80px;
+	width: 100%;
+}
+
+.mall {
+	position: absolute;
+	width: 100%;
+	top: 2900px;
+	min-width: 1350px;
+}
+
+.mall-table img {
+	width: 100%;
+	height: 100%;
+}
+
+.mall-table-top {
+	position: relative;
+	width: 33.3%;
+	height: 100%;
+	float: left;
+}
+
+.mall-table-img {
+	position: relative;
+	width: 100%;
+	height: 243px;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-defalut navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="__URL__/index"><img class="img-brand" alt="CO-Locker" src="__PUBLIC__/images/logo.png"></a>
+			</div>
+			<div class="navbar-collapse collapse pull-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="javascript:void(0)" id="nav-index">首页</a></li>
+					<li><a href="javascript:void(0)" id="nav-product">产品介绍</a></li>
+					<li><a href="javascript:void(0)" id="nav-mall">商城</a></li>
+					<li><a href="javascript:void(0)" id="nav-down">下载APP</a></li>
+					<li><a href="javascript:void(0)" id="nav-contact">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="index">
+		<div class="login">
+			<a class="button green" href="__URL__/login">登录</a>
+		</div>
+		<div class="regist">
+			<a class="button green" href="__URL__/registe">注册</a>
+		</div>
+		<a href="#" class="index-bg"><img src="__PUBLIC__/images/bg.jpg" ></a>
+		<img alt="" src="__PUBLIC__/images/green.png" class="green-bottom">
+	</div>
+	<div class="product">
+		<div class="product-header">
+			<img alt="" src="__PUBLIC__/images/product.png" class="header-img">
+			<p class="header-text">产品介绍</p>
+			<div class="header-content">
+				<p>本产品无锁孔，通过蓝牙无线通信与后台交互实现APP一键解锁</p>
+			</div>
+			<img src="__PUBLIC__/images/green-tp.png" />
+		</div>
+		<div class="product-content">
+			<div class="location">
+				<img src="__PUBLIC__/images/ride.jpg"> <img
+					src="__PUBLIC__/images/location.jpg" class="tag">
+				<div class="gps">
+					<p>搭载GPS和北斗定位模块</p>
+					<p>对自行车实时定位</p>
+					<p>双定位更精确</p>
+				</div>
+				<img src="__PUBLIC__/images/core.jpg" class="core"> <img
+					src="__PUBLIC__/images/tangle.png" class="tangle">
+			</div>
+			<div class="lock">
+				<img alt="" src="__PUBLIC__/images/lock.jpg" class="lock-label">
+				<div class="lock-content">
+					<p>无锁孔，通过APP一键解锁</p>
+					<p>方便又安全，一旦有人对自行车</p>
+					<p>进行盗窃行为时，内置的蜂鸣器</p>
+					<p>会发出警报，及时制止违法行为</p>
+					<p>若想破坏锁体，CO-Locker在锁</p>
+					<p>内部形成自锁，保护锁内部设备</p>
+				</div>
+				<img alt="" src="__PUBLIC__/images/unlock.png" class="unlock-img">
+				<img alt="" src="__PUBLIC__/images/tangle-right.png"
+					class="tangle-right"> <img alt=""
+					src="__PUBLIC__/images/CO-Locker10.jpg" class="CO-Locker10">
+			</div>
+			<div class="app">
+				<img alt="" src="__PUBLIC__/images/rent-big.png" class="rent-big">
+				<img alt="" src="__PUBLIC__/images/tangle.png" class="rent-tangle">
+				<img alt="" src="__PUBLIC__/images/rent-small.png"
+					class="rent-small">
+				<div class="app-content">
+					<p>通过下载我们配套的APP可以实现</p>
+					<p>权限转让，需要使用本产品的用户同意</p>
+					<p>APP向后台发出指令，实现转借权限</p>
+				</div>
+				<img alt="" src="__PUBLIC__/images/rent-mid.png" class="rent-mid">
+			</div>
+			<div class="ride">
+				<img alt="" src="__PUBLIC__/images/ride6.jpg" class="ride6"> <img
+					alt="" src="__PUBLIC__/images/tangle.png" class="tangle-ride">
+				<img alt="" src="__PUBLIC__/images/ride3.jpg" class="ride3"> <img
+					alt="" src="__PUBLIC__/images/tangle-right.png"
+					class="tangle-right-ride"> <img alt=""
+					src="__PUBLIC__/images/bike.jpg" class="bike">
+				<div class="ride-content">
+					<p>由于车锁具备北斗定位功能</p>
+					<p>可以通过云端将其他车主位置</p>
+					<p>信息进行扩散，呈现给用户</p>
+					<p>团队出行，骑车交友都得以实现</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mall">
+		<div class="mall-header">
+			<img alt="" src="__PUBLIC__/images/cart.png" class="cart">
+			<p>商城</p>
+		</div>
+		<!-- <div class="mall-content">
+			<div class="bikeall Locker10">
+				<img alt="" src="__PUBLIC__/images/CO-Locker11.jpg">
+				<div class="cover">
+					<span>现在购买</span>
+				</div>
+			</div>
+			<div class="bikeall bike4">
+				<img alt="" src="__PUBLIC__/images/bike4.jpg" >
+				<div class="cover">
+					<span>现在购买</span>
+				</div>				
+			</div>
+			<div class="bikeall bike11">
+				<img alt="" src="__PUBLIC__/images/bike11.jpg" >
+				<div class="cover">
+					<span>现在购买</span>
+				</div>				
+			</div>
+			<div class="bikeall bike7">
+				<img alt="" src="__PUBLIC__/images/bike7.jpg" >
+				<div class="cover">
+					<span>现在购买</span>
+				</div>				
+			</div>
+			<div class="bikeall bike9">
+				<img alt="" src="__PUBLIC__/images/bike9.jpg">
+				<div class="cover">
+					<span>现在购买</span>
+				</div>				
+			</div>
+			<div class="bikeall bike8">
+				<img alt="" src="__PUBLIC__/images/bike8.jpg">
+				<div class="cover">
+					<span>现在购买</span>
+				</div>				
+			</div>
+			<div class="bikeall bike10">
+				<img alt="" src="__PUBLIC__/images/bike10.jpg">
+				<div class="cover">
+					<span>现在购买</span>
+				</div>				
+			</div>
+			<div class="bikeall bike5">
+				<img alt="" src="__PUBLIC__/images/bike5.jpg">
+				<div class="cover">
+					<span>现在购买</span>
+				</div>				
+			</div>
+			<div class="bikeall bike6">
+				<img alt="" src="__PUBLIC__/images/bike6.jpg">
+				<div class="cover">
+					<span>现在购买</span>
+				</div>				
+			</div>
+			<div class="bikeall bike1">
+				<img alt="" src="__PUBLIC__/images/bike1.jpg">
+				<div class="cover">
+					<span>现在购买</span>
+				</div>				
+			</div>
+		</div> -->
+		<table class="mall-table">
+			<tr>
+				<td colspan=4>
+					<div class="mall-table-top">
+						<a href="#">
+							<img alt="" src="__PUBLIC__/images/CO-Locker11.jpg">
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+					<div class="mall-table-top">
+						<a href="">
+							<img alt="" src="__PUBLIC__/images/bike4.jpg">
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+					<div class="mall-table-top">
+						<a href="#">
+							<img alt="" src="__PUBLIC__/images/bike11.jpg">
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="mall-table-img">
+						<a href="">
+							<img alt="" src="__PUBLIC__/images/bike7.jpg" />
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="mall-table-img">
+						<a href="#">
+							<img alt="" src="__PUBLIC__/images/bike9.jpg" />
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+				</td>
+				<td rowspan=2>
+					<div class="mall-table-img mall-table-img2" style="height:484px">
+						<a href="">
+							<img alt="" src="__PUBLIC__/images/bike8.jpg" />
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="mall-table-img">
+						<a href="">
+							<img alt="" src="__PUBLIC__/images/bike10.jpg" />
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="mall-table-img">
+						<a href="">
+							<img alt="" src="__PUBLIC__/images/bike5.jpg" />
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="mall-table-img">
+						<a href="">
+							<img alt="" src="__PUBLIC__/images/bike6.jpg" />
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="mall-table-img">
+						<a href="">
+							<img alt="" src="__PUBLIC__/images/bike1.jpg" />
+							<span class="coverall">现在购买</span>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div class="enter-mall">
+			<img alt="" src="__PUBLIC__/images/arrows.png">
+			<a href="#">
+				<span>进入商城</span>
+			</a>
+		</div>
+	</div>
+	<div class="down">
+		<div class="down-header">
+			<img alt="" src="__PUBLIC__/images/green-tp.png">
+		</div>
+		<div class="down-content">
+			<div class="qrcode">
+				<img alt="" src="__PUBLIC__/images/qrcode.png">			
+			</div>
+			<span class="co">CO-Locker</span>
+			<span class="slogan">为您的爱车保驾护航</span>
+			<span class="scan">扫一扫&nbsp;&nbsp;下载APP</span>
+		</div>
+	</div>
+	<div class="contact">
+		<div class="contact-header">
+			<img alt="" src="__PUBLIC__/images/email.jpg">
+			<span>联系我们</span>
+		</div>
+		<div class="contact-content">
+			<span>TEL:&nbsp;&nbsp;156&nbsp;8097&nbsp;4830</span><br>
+			<span>Email:1224302128@qq.com</span>
+		</div>
+	</div>
+	<div class="footer">
+		<span>Copyright &copy; 2016 CO-Locker ALL rights reserved</span>
+		<img alt="" src="__PUBLIC__/images/green.png">
+	</div>
+<script src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>	
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/html5media.min.js"></script>
+<script>
+$("#nav-index").click(function(){
+	$('html,body').animate({scrollTop:$(".index").offset().top},0);
+});
+$("#nav-product").click(function(){
+	$('html,body').animate({scrollTop:$(".product").offset().top},0);
+});
+$("#nav-mall").click(function(){
+	$('html,body').animate({scrollTop:$(".mall").offset().top},0);
+});
+$("#nav-down").click(function(){
+	$('html,body').animate({scrollTop:$(".down").offset().top},0);
+});
+$("#nav-contact").click(function(){
+	$('html,body').animate({scrollTop:$(".contact").offset().top},0);
+});
+$(document).hover(function(){
+	  $(".enter-mall").mouseover(function(){
+	    setTimeout("loopMove()",2);
+	  });
+	});
+function loopMove(){
+		$(".enter-mall img").animate({left:'610px'});
+		$(".enter-mall img").animate({left:'600px'});
+}
+</script>
+</body>
+</html>

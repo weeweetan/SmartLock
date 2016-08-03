@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="__PUBLIC__/images/logo-small.png" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/font-awesome/css/font-awesome.min.css">
+<title>注册</title>
+<style>
+.form-control:focus {
+	border-color: #00d295;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(0, 210, 149, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(0, 210, 149, .6)
+}
+
+.form-control::-moz-placeholder {
+	color: #00d295;
+	opacity: 1
+}
+
+.form-control:-ms-input-placeholder {
+	color: #00d295;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #00d295;
+}
+
+body {
+	background: #e9e9f1;
+}
+
+.content {
+	width: 900px;
+}
+
+.registe-content {
+	position: absolute;
+	left: 400px;
+	top: 50px;
+	width: 500px;
+}
+
+.h3 {
+	color: #8fddc5;
+	font-family: 微软雅黑;
+	margin-top: 10px;
+}
+
+.form-box {
+	margin-top: 30px;
+}
+
+.form-group {
+	width: 250px;
+	margin-top: 20px;
+}
+
+#vertify {
+	width: 100px;
+}
+
+.get-vertify {
+	position: absolute;
+	left: 120px;
+	top: 274px;
+	height: 34px;
+}
+
+.form-group a {
+	text-decoration: none;
+}
+
+.button {
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.button:focus {
+	outline: 0;
+}
+
+.button_shadow {
+	padding: .45em 1.3em .65em;
+	font-size: 1.2em;
+	background: #fafafa;
+	border: 0;
+	box-shadow: 0 0 20px silver;
+	color: #787878;
+}
+
+.button_shadow:hover, .button_border:hover {
+	color: #fff !important;
+	background: #00d295;
+}
+
+.button_shadow[data-button=green], .button_border[data-button=green] {
+	border-color: #2ecc71;
+	color: #2ecc71;
+}
+
+.button_border {
+	padding: .85em 1.3em .65em;
+	font-size: 1.2em;
+	background: none;
+	border-width: 2.7px;
+	border-style: solid;
+	border-color: #a0a0a0;
+	border-radius: 4px;
+	color: #787878;
+}
+
+.registe {
+	width: 250px;
+	margin-top: 30px;
+}
+
+.foot {
+	margin-top: 50px;
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+.foot a {
+	color: #00d399;
+	text-decoration: none;
+}
+
+.phone-box i {
+	position: absolute;
+	left: 260px;
+	top: 120px;
+	color: #ee4c57;
+}
+
+.empty, .validate,.error {
+	display: none;
+}
+
+.nick-box i {
+	position: absolute;
+	left: 260px;
+	top: 175px;
+	color: #ee4c57;
+}
+
+.pass-box i{
+	position: absolute;
+	left: 260px;
+	top: 230px;
+	color: #ee4c57;
+}
+.vertify-box i{
+	color: #ee4c57;
+}
+.pw-strength {
+	clear: both;
+	position: absolute;
+	top: 230px;
+	left:260px;
+	width: 180px;
+}
+
+.pw-bar {
+	background: url(__PUBLIC__/images/pwd-1.png) no-repeat;
+	position: relative;
+	top: 1px;
+	height: 14px;
+	overflow: hidden;
+	width: 179px;
+}
+
+.pw-bar-on {
+	background: url(__PUBLIC__/images/pwd-2.png) no-repeat;
+	width: 0px;
+	height: 14px;
+	position: absolute;
+	top: 1px;
+	left: 2px;
+	transition: width .5s ease-in;
+	-moz-transition: width .5s ease-in;
+	-webkit-transition: width .5s ease-in;
+	-o-transition: width .5s ease-in;
+}
+
+.pw-weak .pw-defule {
+	width: 0px;
+}
+
+.pw-weak .pw-bar-on {
+	width: 60px;
+}
+
+.pw-medium .pw-bar-on {
+	width: 120px;
+}
+
+.pw-strong .pw-bar-on {
+	width: 179px;
+}
+
+.pw-txt {
+	padding-top: 2px;
+	width: 180px;
+	overflow: hidden;
+}
+
+.pw-txt span {
+	color: #707070;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	width: 58px;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<div class="registe-header">
+<img alt="" src="__PUBLIC__/images/green-top.png">
+</div>
+		<div class="registe-content">
+			<div>
+				<a href="__URL__/index"><img alt="" src="__PUBLIC__/images/logo.png"></a>
+			</div>
+			<div class="h3">
+				<h3>注册账号</h3>
+			</div>
+			<div class="form-box">
+				<form action="__URL__/dealRegiste" method="post">
+					<div class="form-group phone-box">
+						<input type="tel" class="form-control" id="phone" name="phone"
+							placeholder="手机号" onblur="validatemobile(this)">
+						<i class="fa fa-remove empty">请输入手机号码</i>
+						<i class="fa fa-remove validate">请输入有效的手机号码</i>
+						<i class="fa fa-remove error">该号码已被注册</i>
+					</div>
+					<div class="form-group nick-box">
+						<input type="text" class="form-control" id="nickname" name="nickname"
+							placeholder="昵称">
+							<i class="fa fa-remove empty">昵称不能为空</i>
+					</div>
+					<div class="form-group pass-box">
+						<input type="password" class="form-control" id="password"
+							name="password" placeholder="密码" name="password">
+							<i class="fa fa-remove empty">密码不能为空</i>
+						<div id="level" class="pw-strength">
+							<div class="pw-bar"></div>
+							<div class="pw-bar-on"></div>
+							<div class="pw-txt">
+								<span>弱</span> 
+								<span>中</span> 
+								<span>强</span>
+							</div>
+						</div>
+					</div>
+					<div class="form-group vertify-box">
+						<input type="text" class="form-control" id="vertify" name="vertify"
+							placeholder="手机验证码">
+							<i class="fa fa-remove empty">验证码不能为空</i>
+							<i class="fa fa-remove error">验证码输入错误</i>
+						<input class="button button_shadow get-vertify" type="button" data-button="green" onclick="settime(this)" value="获取验证码">
+					</div>
+					<button type="submit" class="button button_border registe" data-button="green">注册</button>
+				</form>
+			</div>
+			<div class="foot">
+			<p>已有账号?&nbsp;<a href="__URL__/login">【直接登录】</a></p>
+		</div>
+		</div>
+	</div>
+	<script src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>	
+	<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+	<script>
+	//校验电话号码的有效性
+	function validatemobile(phone) {
+		var myreg = /^(((13[0-9]{1})|14[5,7,9]{1}|(15[0-9]{1})|17[1,3,5-8]{1}|(18[0-9]{1}))+\d{8})$/; 
+	       if(phone.value.length==0) 
+	       { 
+	    	  $('.phone-box .empty').css("display","block");
+	          document.getElementById("phone").focus(); 
+	          return false; 
+	       }else if(phone.value.length!=0){
+	    	   $('.phone-box .empty').css("display","none");
+		       if(phone.value.length!=11) 
+		       {
+		    	   $('.phone-box .validate').css("display","block");
+		           document.getElementById("phone").focus(); 
+		           return false; 
+		       }else if(phone.value.length==11){
+		    	   $('.phone-box .validate').css("display","none");
+			       if(!myreg.test(phone.value)) 
+			       { 
+			    	   $('.phone-box .validate').css("display","block");
+			           document.getElementById("phone").focus(); 
+			           return false; 
+			       }else{
+			    	   $('.phone-box .validate').css("display","none");
+			       }
+		       }
+	       }     
+	   }
+	
+	$("#phone").change(function(){
+		if($("#phone").val().length==11){
+			var phone = $("#phone").val();
+			$.post('/SmartLock/Index/checkUser',{phone:phone},function(data){
+				if(data==1){
+					$(".phone-box .error").css("display","block");
+				}
+			},'json');
+		}
+	});
+	
+	$("#nickname").focus(function(){
+        if(!$("#phone").val()){
+        	$('.phone-box .empty').css("display","block");
+        }else{
+        	$('.phone-box .empty').css("display","none");
+        }
+    });
+	
+	$("#nickname").blur(function(){
+		if(!$("#nickname").val() && $("#phone").val()){
+			$(".nick-box .empty").css("display","block");
+			/* $("#nickname").focus(); */
+		}
+	});
+	$("#password").focus(function(){
+        if(!$("#phone").val()){
+        	$('.phone-box .empty').css("display","block");
+        }else{
+        	$('.phone-box .empty').css("display","none");
+        }
+        if(!$("#nickname").val()){
+        	$(".nick-box .empty").css("display","block");
+        }else{
+        	$(".nick-box .empty").css("display","none");
+        }
+	});
+	
+	$("#password").blur(function(){
+		if(!$("#password").val() && $("#phone").val() && $("#nickname").val()){
+			$("#level").css("display","none");
+			$(".pass-box .empty").css("display","block");
+			/* $("#password").focus(); */
+		}else{
+			$(".pass-box .empty").css("display","none");	
+			$("#level").css("display","block");
+		}
+	});
+	//密码强度
+	$(function(){ 
+		$('#password').keyup(function () { 
+			var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g"); 
+			var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g"); 
+			var enoughRegex = new RegExp("(?=.{6,}).*", "g"); 
+		
+			if (false == enoughRegex.test($(this).val())) { 
+				$('#level').removeClass('pw-weak'); 
+				$('#level').removeClass('pw-medium'); 
+				$('#level').removeClass('pw-strong'); 
+				$('#level').addClass(' pw-defule'); 
+				 //密码小于六位的时候，密码强度图片都为灰色 
+			} 
+			else if (strongRegex.test($(this).val())) { 
+				$('#level').removeClass('pw-weak'); 
+				$('#level').removeClass('pw-medium'); 
+				$('#level').removeClass('pw-strong'); 
+				$('#level').addClass(' pw-strong'); 
+				 //密码为八位及以上并且字母数字特殊字符三项都包括,强度最强 
+			} 
+			else if (mediumRegex.test($(this).val())) { 
+				$('#level').removeClass('pw-weak'); 
+				$('#level').removeClass('pw-medium'); 
+				$('#level').removeClass('pw-strong'); 
+				$('#level').addClass(' pw-medium'); 
+				 //密码为七位及以上并且字母、数字、特殊字符三项中有两项，强度是中等 
+			} 
+			else { 
+				$('#level').removeClass('pw-weak'); 
+				$('#level').removeClass('pw-medium'); 
+				$('#level').removeClass('pw-strong'); 
+				$('#level').addClass('pw-weak'); 
+				 //如果密码为6为及以下，就算字母、数字、特殊字符三项都包括，强度也是弱的 
+			} 
+			return true; 
+		}); 
+	}); 
+	 var countdown = 60; 
+	function settime(obj) {
+		if(!$("#phone").val()){
+			$('.phone-box .empty').css("display","block");
+		}else{
+			var phone = $("#phone").val();
+		    if (countdown == 0) { 
+		        obj.removeAttribute("disabled");    
+		        obj.value="获取验证码"; 
+		        countdown = 60; 
+		        return;
+		    } else {
+		    	if(countdown==60){
+					$.post('/SmartLock/Index/sendSmsVertify',{phone:phone},function(data){
+					},'json');
+		    	}
+		        obj.setAttribute("disabled", true); 
+		        obj.value="重新发送(" + countdown + ")"; 
+		        countdown--;
+		    } 
+			setTimeout(function() { 
+		    settime(obj) 
+		    }
+			,1000) 
+		}
+	}
+	
+	$("#vertify").change(function(){
+		if($("#vertify").val().length==4){
+			var code = $("#vertify").val();
+			var phone = $("#phone").val();
+			$.post('/SmartLock/Index/checkCode',{code:code,phone:phone},function(data){
+				if(!data){
+					$(".vertify-box .error").css("display","block");
+				}
+			},'json');
+		}
+	});
+	
+	$("#vertify").focus(function(){
+		$(".vertify-box .error").css("display","none");
+	});
+	</script>
+</body>
+</html>
